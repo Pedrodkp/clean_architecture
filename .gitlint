@@ -1,6 +1,2 @@
 [general]
 ignore=body-is-missing
-
-[title]
-# Enforce that the commit message title starts with a type and a colon
-regex=^(chore|bug|feat|fix|docs|style|refactor|test|perf|ci|build|revert|wip): .+
