@@ -1,2 +1,5 @@
 [general]
 ignore=body-is-missing
+
+[title-match-regex]
+regex=^(chore|bug|feat|fix|docs|style|refactor|test|perf|ci|build|revert|wip): .+
