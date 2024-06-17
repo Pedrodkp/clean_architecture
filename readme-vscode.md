@@ -53,3 +53,9 @@ pylint...................................................................Failed
 ************* Module example
 example.py:2:4: W0612: Unused variable 'x' (unused-variable)
 ```
+
+If need ignore can use flag:
+
+```
+git commit -m "feat: Starting implementing use_cases" --no-verify
+```
