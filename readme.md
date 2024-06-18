@@ -34,6 +34,12 @@ Vamos implementar na prática em um projeto python utilizando SQLAlchemy, as lig
 
 ![Implementação](./assets_md/implementation.png)
 
+### Interface HTTP
+
+Na sequência é implementada a camada HTTP do projeto.
+
+![Implementação HTTP](./assets_md/implementation-http.png)
+
 ### Install
 
 ```
