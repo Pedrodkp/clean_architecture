@@ -41,6 +41,11 @@ Na sequência é implementada a camada HTTP do projeto.
 
 ![Implementação HTTP](./assets_md/implementation-http.png)
 
+## Frameworks and Drivers
+
+A camada mais externa geralmente é composta por frameworks e ferramentas como o Banco de Dados, o Web Framework, etc.  
+Geralmente você não escreve muito código nesta camada além do código que se comunica com o próximo circulo interno.
+
 ### Install
 
 ```
@@ -53,5 +58,14 @@ docker run --name clean_architecture_mysql -e MYSQL_ROOT_PASSWORD=root -p 3306:3
 ```
 docker restart clean_architecture_mysql
 source venv/bin/activate
+```
+
+#### Test
+```
 pytest -s -v
+```
+
+#### Http Server
+```
+python run.py
 ```
