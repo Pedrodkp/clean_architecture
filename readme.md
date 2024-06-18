@@ -44,5 +44,7 @@ docker run --name clean_architecture_mysql -e MYSQL_ROOT_PASSWORD=root -p 3306:3
 ### Run
 
 ```
+docker restart clean_architecture_mysql
+source venv/bin/activate
 pytest -s -v
 ```
