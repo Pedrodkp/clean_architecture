@@ -55,17 +55,35 @@ docker run --name clean_architecture_mysql -e MYSQL_ROOT_PASSWORD=root -p 3306:3
 
 ### Run
 
+#### Database
 ```
 docker restart clean_architecture_mysql
+```
+
+#### Docker
+```
+docker inspect clean_architecture_mysql
+```
+Get IpAdress and change in: connection.py
+```
+docker build -t clean_project_img .
+```
+Then run
+```
+docker run --name clean_project -p 5000:5000 clean_project_img
+```
+
+#### Run pure python
+```
 source venv/bin/activate
 ```
 
-#### Test
+##### Test
 ```
 pytest -s -v
 ```
 
-#### Http Server
+##### Http Server
 ```
 python run.py
 ```
