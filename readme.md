@@ -18,6 +18,16 @@ Clean Architeture é sobre princípios, o próprio livro do Uncle Bob não foca 
 O foco é fazer o código centralizando o domínio do projeto, ou seja, funcionalidades e como os dados são tratados em vez de frameworks.  
 Para facilitar domínio do projeto é tudo que você explica sobre o sistema para alguém que não conhece programação, ou seja, o que ele faz. Isso é de fato a utilidade dele e de ser protegido pelo clean architecture.  
 
+## Entidades (Enterprise Business Rules)
+
+As entidades encapsulam as regras de negócios de toda a empresa. Uma entidade pode ser um objeto com métodos ou pode ser um conjunto de funções e estruturas de dados.  
+Ex: user_finder.py encapsula o model Users
+
+## Use Cases (Application Business Rules)
+
+Camada com as regras de negócio, orquestra o fluxo de data entre as entidades.  
+Com clean architecture não se espera alterações nessa camada devido mudanças de databases, UI ou coisas parecidas.
+
 ## Implementation
 
 Vamos implementar na prática em um projeto python utilizando SQLAlchemy, as ligações serão feitas via interface para a regra de negócio:
