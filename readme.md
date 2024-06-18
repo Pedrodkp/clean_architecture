@@ -1,5 +1,6 @@
 # Clean Architecture
 
+Referência:  
 https://www.youtube.com/watch?v=2nvbgwFE_0Y&list=PLAgbpJQADBGK0opZ8ZuDX3zDjQck_QKMy&index=1
 
 ![Visao Geral](./assets_md/visao_geral%20.jpg)
